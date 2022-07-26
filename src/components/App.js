@@ -11,11 +11,12 @@ function App() {
       .then(listObj => {setPopList(listObj)} )
       
   },[])
-  console.log(popList)
+
+
   return ( 
     <div className="app">
       <Header />
-      <ListingsContainer />
+      <ListingsContainer  popList={popList}/>
     </div>
   );
 }

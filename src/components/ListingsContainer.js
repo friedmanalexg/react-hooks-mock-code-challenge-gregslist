@@ -1,16 +1,18 @@
 import React from "react";
-// import ListingCard from "./ListingCard";
+import ListingCard from "./ListingCard";
 
 
 
-function ListingsContainer() {
-  
+function ListingsContainer({popList}) {
+  //console.log(popList)
 
   return (
     <main>
+      {popList.map((list)=> 
+    
       <ul className="cards">
-        {/* use the ListingCard component to display listings */}
-      </ul>
+        <ListingCard key={list.id} description = {list.description} image={list.image} location ={list.location}/>
+      </ul>  )}
     </main>
   );
 }
