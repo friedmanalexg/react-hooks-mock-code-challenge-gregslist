@@ -8,11 +8,13 @@ function ListingsContainer({popList}) {
 
   return (
     <main>
-      {popList.map((list)=> 
-    
       <ul className="cards">
-        <ListingCard key={list.id} description = {list.description} image={list.image} location ={list.location}/>
-      </ul>  )}
+      
+        {popList.map((list)=> 
+          <ListingCard key={list.id} description = {list.description} image={list.image} location ={list.location}/>
+        )}
+        
+      </ul> 
     </main>
   );
 }
