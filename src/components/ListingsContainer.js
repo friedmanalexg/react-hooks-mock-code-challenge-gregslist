@@ -11,9 +11,9 @@ function ListingsContainer({popList}) {
       <ul className="cards">
       
         {popList.map((list)=> 
-          <ListingCard key={list.id} description = {list.description} image={list.image} location ={list.location}/>
+          <ListingCard key={list.id} forDelete ={list.id} description = {list.description} image={list.image} location ={list.location}/>
         )}
-        
+
       </ul> 
     </main>
   );
