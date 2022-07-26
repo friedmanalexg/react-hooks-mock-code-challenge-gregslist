@@ -1,5 +1,6 @@
 # React Mock Code Challenge: gregslist
 Alex wuz here.
+Josephine was here 
 ## Demo
 
 Use this gif as an example of how the app should work.
